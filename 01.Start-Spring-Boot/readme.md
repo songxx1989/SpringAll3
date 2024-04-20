@@ -2,11 +2,11 @@
 
 ## 生成项目文件
 
-Spring Boot是在Spring框架上创建的一个全新的框架，其设计目的是简化Spring应用的搭建和开发过程。开启Spring Boot有许多种方法可供选择，这里仅介绍使用http://start.spring.io/来构建一个简单的Spring Boot项目。这里选择以Maven构建，语言选择Java，Spring Boot版本为3.2.5，以jar包的方式部署，Java版本为17。在页面的右还可以选择诸多的依赖，这里仅选择web进行演示：
+Spring Boot是在Spring框架上创建的一个全新的框架，其设计目的是简化Spring应用的搭建和开发过程。开启Spring Boot有许多种方法可供选择，这里仅介绍使用http://start.spring.io/来构建一个简单的Spring Boot项目。这里选择以Maven构建，语言选择Java，Spring Boot版本为3.2.5，以jar包的方式部署，Java版本为17。在页面的右边还可以选择诸多的依赖，这里仅选择web进行演示：
 
 ![image-20240420115926763](./assets/image-20240420115926763.png)
 
-最后点击页面的generate按钮生成项目文件。文件下载后是一个压缩包，进行解压然后使用idea以Maven项目的形式导入。导入后idea会自动编译项目并下载相应的依赖，项目目录如下所示：
+最后点击页面的GENERATE按钮生成项目文件。文件下载后是一个压缩包，进行解压然后使用IDEA以Maven项目的形式导入。导入后IDEA会自动编译项目并下载相应的依赖，项目目录如下所示：
 
 ![image-20240420120351552](./assets/image-20240420120351552.png)
 
@@ -48,7 +48,7 @@ public class DemoApplication {
 
 ## 打包发布
 
-在idea中双击Ctrl，输入mvn clean package如下图所示：
+在IDEA中双击Ctrl，输入mvn clean package如下图所示：
 
 ![image-20240420121113266](./assets/image-20240420121113266.png)
 
