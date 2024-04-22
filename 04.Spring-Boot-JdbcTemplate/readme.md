@@ -4,7 +4,7 @@
 
 ## 引入依赖
 
-数据库采用h2，使用lombok简化代码。
+数据库采用h2，使用lombok简化代码，在 [pom.xml](pom.xml) 引入依赖
 
 ```xml
 <dependency>
@@ -24,7 +24,7 @@
 
 ## 建表
 
- [schema.sql](src\main\resources\schema.sql) 建表
+ [schema.sql](src\main\resources\schema.sql) 建表语句
 
 ```sql
 CREATE TABLE IF NOT EXISTS student
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS student
 );
 ```
 
- [data.sql](src\main\resources\data.sql) 插入示例数据
+ [data.sql](src\main\resources\data.sql)  插入示例数据
 
 ```sql
 insert into student values ('001', 'KangKang', 'M');
@@ -43,7 +43,7 @@ insert into student values ('002', 'Mike', 'M');
 insert into student values ('003', 'Jane', 'F');
 ```
 
-[application.yml](src\main\resources\application.yml) 配置文件
+ [application.yml](src\main\resources\application.yml)  配置数据源
 
 ```yml
 spring:
@@ -62,7 +62,7 @@ spring:
 
 ## 代码编写
 
- [Student.java](src\main\java\com\example\demo\bean\Student.java) 使用@Data注解简化getter和setter方法。
+ [Student.java](src\main\java\com\example\demo\bean\Student.java)  实体类使用@Data注解简化getter和setter方法。
 
 ```java
 @Data
@@ -73,7 +73,7 @@ public class Student {
 }
 ```
 
- [StudentMapper.java](src\main\java\com\example\demo\mapper\StudentMapper.java) 当数据库列名与Java Bean属性名不一致时，使用RowMapper进行映射。
+ [StudentMapper.java](src\main\java\com\example\demo\mapper\StudentMapper.java)  当数据库列名与Java Bean属性名不一致时，使用RowMapper进行映射。
 
 ```java
 public class StudentMapper implements RowMapper<Student> {
@@ -88,7 +88,7 @@ public class StudentMapper implements RowMapper<Student> {
 }
 ```
 
- [StudentDao.java](src\main\java\com\example\demo\dao\StudentDao.java) 
+ [StudentDao.java](src\main\java\com\example\demo\dao\StudentDao.java) DAO接口
 
 ```java
 public interface StudentDao {
@@ -104,7 +104,7 @@ public interface StudentDao {
 }
 ```
 
- [StudentDaoImpl.java](src\main\java\com\example\demo\dao\impl\StudentDaoImpl.java) 
+ [StudentDaoImpl.java](src\main\java\com\example\demo\dao\impl\StudentDaoImpl.java) DAO实现类
 
 ```java
 @Repository
@@ -149,7 +149,7 @@ public class StudentDaoImpl implements StudentDao {
 
 ## 测试
 
- [StudentDaoImplTest.java](src\test\java\com\example\demo\dao\impl\StudentDaoImplTest.java) 
+ [StudentDaoImplTest.java](src\test\java\com\example\demo\dao\impl\StudentDaoImplTest.java)  测试类
 
 ```java
 @SpringBootTest
