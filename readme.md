@@ -4,9 +4,9 @@
 ### Spring Boot教程 
 1. [开启Spring Boot](01.Start-Spring-Boot/readme.md)
 2. [Spring Boot基础配置](02.Spring-Boot-Config/readme.md)
-3. [Spring Boot中使用MyBatis]()
-4. [Spring Boot中使用JdbcTemplate]()
-5. [Spring Boot MyBatis配置Druid多数据源]()
+3. [Spring Boot中使用MyBatis](03.Spring-Boot-Config/readme.md)
+4. [Spring Boot中使用JdbcTemplate](04.Spring-Boot-JdbcTemplate/readme.md)
+5. [Spring Boot MyBatis配置Druid多数据源](05.Spring-Boot-MyBatis-MultiDataSource/readme.md)
 6. [Spring Boot JdbcTemplate配置Druid多数据源]()
 7. [Spring Boot AOP记录用户操作日志]()
 8. [Spring Boot中使用thymeleaf]()
