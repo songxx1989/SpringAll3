@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS student
+(
+    sno   VARCHAR(255) PRIMARY KEY,
+    sname VARCHAR(255) NOT NULL,
+    ssex  CHAR(1)      NOT NULL
+);
