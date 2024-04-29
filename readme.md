@@ -8,7 +8,7 @@
 4. [Spring Boot中使用JdbcTemplate](04.Spring-Boot-JdbcTemplate/readme.md)
 5. [Spring Boot MyBatis配置Druid多数据源](05.Spring-Boot-MyBatis-MultiDataSource/readme.md)
 6. [Spring Boot JdbcTemplate配置Druid多数据源](06.Spring-Boot-JdbcTemplate-MultiDataSource/readme.md)
-7. [Spring Boot AOP记录用户操作日志]()
+7. [Spring Boot AOP记录用户操作日志](../07.Spring-Boot-AOP-Log/readme.md)
 8. [Spring Boot中使用thymeleaf]()
 9. [Spring Boot中使用Redis缓存数据]()
 10. [Spring Boot中使用Ehcache缓存数据]()
