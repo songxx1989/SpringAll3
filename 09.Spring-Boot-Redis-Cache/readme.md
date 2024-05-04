@@ -1,4 +1,4 @@
-# Spring Boot中使用缓存
+# Spring Boot中使用Redis缓存
 在程序中可以使用缓存的技术来节省对数据库的开销。Spring Boot对缓存提供了很好的支持，我们几乎不用做过多的配置即可使用各种缓存实现。这里主要介绍平日里个人接触较多的Redis缓存实现。
 
 ## 准备工作
@@ -226,6 +226,7 @@ void update() {
 
     student1.setName("康康");
     studentService.update(student1);
+    System.out.println("更新完毕");
 
     Student student2 = studentService.queryBySno("001");
     System.out.println(student2);
@@ -242,8 +243,13 @@ Student(sno=001, name=KangKang, sex=M)
 2024-05-04T22:01:08.138+08:00 DEBUG 2568 --- [           main] c.e.d.mapper.StudentMapper.queryBySno    : ==>  Preparing: select * from student where sno=?
 2024-05-04T22:01:08.150+08:00 DEBUG 2568 --- [           main] c.e.d.mapper.StudentMapper.queryBySno    : ==> Parameters: 001(String)
 2024-05-04T22:01:08.197+08:00 DEBUG 2568 --- [           main] c.e.d.mapper.StudentMapper.queryBySno    : <==      Total: 1
+更新完毕
 Student(sno=001, name=康康, sex=M)
 ```
+
+最终项目目录如下所示：
+
+![image-20240505070217886](./assets/image-20240505070217886.png)
 
 在redis中查看：
 

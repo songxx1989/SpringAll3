@@ -23,6 +23,7 @@ class StudentServiceTest {
 
         student1.setName("康康");
         studentService.update(student1);
+        System.out.println("更新完毕");
 
         Student student2 = studentService.queryBySno("001");
         System.out.println(student2);
