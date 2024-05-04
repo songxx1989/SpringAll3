@@ -12,8 +12,21 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 class StudentServiceTest {
+
     @Autowired
     private StudentService studentService;
+
+    @Test
+    void update() {
+        Student student1 = studentService.queryBySno("001");
+        System.out.println(student1);
+
+        student1.setName("康康");
+        studentService.update(student1);
+
+        Student student2 = studentService.queryBySno("001");
+        System.out.println(student2);
+    }
 
     @Test
     void queryBySno() {
@@ -22,17 +35,6 @@ class StudentServiceTest {
 
         Student student2 = studentService.queryBySno("001");
         System.out.println(student2);
+
     }
-
-@Test
-void update() {
-    Student student1 = studentService.queryBySno("001");
-    System.out.println(student1);
-
-    student1.setName("康康");
-    studentService.update(student1);
-
-    Student student2 = studentService.queryBySno("001");
-    System.out.println(student2);
-}
 }
