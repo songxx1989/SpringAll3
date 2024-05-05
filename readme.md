@@ -12,3 +12,4 @@
 8. [Spring Boot中使用thymeleaf](08.Spring-Boot-Thymeleaf/readme.md)
 9. [Spring Boot中使用Redis缓存数据](09.Spring-Boot-Redis-Cache/readme.md)
 10. [Spring Boot中使用Ehcache缓存数据](10.Spring-Boot-Ehcache-Cache/readme.md)
+11. [Spring Boot中的JSON技术](11.Spring-Boot-Jackson/readme.md)
